@@ -1,0 +1,85 @@
+/*   June 2022  */
+
+
+html {
+box-sizing: border-box ;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("https://swall.teahub.io/photos/small/0-2836_nature-wallpaper-with-flowers-image-good-morning-photo.jpg");
+    background-size: cover;
+    background-position:  bottom center;
+   
+}
+
+.app-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+header {
+    width: 100%;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    margin:0;
+}
+
+header input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    transition: 0.5 ease-out;
+    text-align: center;
+}
+
+header input:focus {
+ background-color: rgb(242, 242, 184);
+ font-size:25px;
+  margin-bottom:0;
+} 
+
+main {
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%; */
+    flex: 1 1 100%;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    justify-items : center;
+    color: white; 
+}
+
+.city, .temperature {
+    font-size: 60px;
+    margin:15px;
+}
+
+@media screen and (max-width:480px) {
+  
+h1 {
+    font-size: 40px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+}
