@@ -17,6 +17,7 @@ const searchInput = document.querySelector(".search-box");
 searchInput.addEventListener('keypress', callbackFunc);
  
 function callbackFunc(event) {
+    console.log("You clicked to enter")
     if (event.keyCode == 13)
     getResult(searchInput.value);    
 }
